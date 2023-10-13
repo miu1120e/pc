@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* reset */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -246,12 +247,39 @@ legend {
   text-indent: -9999px;
 }
 
+.curser-text {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.5em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  animation: animate 7.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.curser-text span {
+  position: absolute;
+  text-transform: uppercase;
+  display: inline-block;
+  transform-origin: 0 100px;
+  top: -100px;
+}
+
 /* 공통 */
 html,
 body {
   height: 100%;
   width: 100%;
-  overflow: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
