@@ -270,7 +270,7 @@ legend {
   position: absolute;
   text-transform: uppercase;
   display: inline-block;
-  transform-origin: 0 100px;
+  transform-origin: 0 80px;
   top: -100px;
 }
 
@@ -298,7 +298,7 @@ body.fixed {
   width: 100%;
   height: 30px;
   line-height: 30px;
-  background: #5e7282;
+  background: #000;
   color: #fff;
   text-align: center;
   z-index: 10000000000;
@@ -417,7 +417,7 @@ body.fixed {
   width: 100%;
   height: 100vh;
   padding: 150px 100px 60px 0;
-  background-color: #312013;
+  background-color: #000;
   opacity: 0;
   transition: left 0.3s, opacity 0.3s;
 }
@@ -474,7 +474,7 @@ body.fixed {
   padding: 0 20px;
   font-size: 30px;
   font-family: "Noto Serif KR", serif;
-  color: #aa9d90;
+  color: #fff;
   line-height: 30px;
 }
 #gnb .box_indicator .nav-depth2 {
@@ -526,12 +526,12 @@ body.fixed {
   font-size: 13px;
 }
 #gnb .foot-goto a:hover {
-  color: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 #gnb .foot-copyright {
   margin-top: auto;
-  color: #aa9d90;
+  color: #fff;
   text-align: right;
   font-size: 14px;
   opacity: 0.35;
@@ -551,7 +551,7 @@ body.fixed {
   bottom: 60px;
   left: 100px;
   padding-left: 20px;
-  color: #efe2d3;
+  color: #fff;
 }
 #gnb .foot-reserve::before {
   content: "";
@@ -560,7 +560,7 @@ body.fixed {
   bottom: 0;
   left: 0;
   width: 1px;
-  background: #efe2d3;
+  background: #fff;
 }
 #gnb .foot-reserve em {
   display: block;
@@ -734,7 +734,7 @@ body.fixed {
   align-items: flex-end;
   position: absolute;
   top: 50%;
-  left: 385px;
+  left: 100px;
   z-index: 100;
   transform: translateY(-70%);
   transform-origin: 0 50%;
@@ -757,7 +757,7 @@ body.fixed {
 }
 .wrap_view_main .swiper-txt.et .txt {
   margin: 0 28px 0 0;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 500;
 }
 .wrap_view_main .swiper-txt.et .txt b {
@@ -790,7 +790,7 @@ body.fixed {
 .wrap_view_main .swiper-txt .txt {
   margin: 0 0 8px 23px;
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Noto Serif KR", serif;
   font-weight: 200;
   white-space: nowrap;
@@ -841,11 +841,12 @@ body.fixed {
 }
 .box_global_view .swiper-txt-sub {
   position: absolute;
+  width: 50%;
   top: 50%;
-  left: 385px;
+  left: 100px;
   transform: translateY(-20%);
   text-align: left;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 500;
   font-family: "Noto Serif KR", serif;
   color: #fff;
@@ -860,10 +861,10 @@ body.fixed {
   font-size: 17px;
 }
 
-/*분양안내*/
+/*location*/
 .box_view05 {
   display: flex;
-  background-color: #312013;
+  background-color: #000;
   line-height: 1.7;
 }
 .box_view05::before {
@@ -872,7 +873,7 @@ body.fixed {
   float: left;
   width: 54%;
   height: 100%;
-  background: #d4d3d2 url(../images/pc-map-.png) 50% no-repeat;
+  background: #ffffff url(../images/q6.jpg) 50% no-repeat;
   background-size: contain;
 }
 .box_view05 .map-txt {
@@ -1184,7 +1185,7 @@ body.fixed {
   height: 100%;
   transform: scale(0);
   transform-origin: left top;
-  background-color: #312013;
+  background-color: #000;
 }
 
 .swiper-pagination {
@@ -1222,6 +1223,7 @@ body.fixed {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: invert(0.2);
 }
 
 .swiper-pagination-bullet {
@@ -1255,7 +1257,7 @@ body.fixed {
   align-items: flex-end;
   width: 100%;
   height: 100vh;
-  background-color: #312013;
+  background-color: #000;
   transition: top 0.5s, opacity 0.5s;
 }
 .container-movie::before {

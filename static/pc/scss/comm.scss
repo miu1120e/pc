@@ -24,7 +24,7 @@
   position: absolute;
   text-transform: uppercase;
   display: inline-block;
-  transform-origin: 0 100px;
+  transform-origin: 0 80px;
   top: -100px;
 }
 
@@ -55,7 +55,7 @@ body.fixed {
     width: 100%;
     height: 30px;
     line-height: 30px;
-    background: #5e7282;
+    background: #000;
     color: #fff;
     text-align: center;
     z-index: 10000000000;
@@ -188,7 +188,7 @@ body.fixed {
   width: 100%;
   height: 100vh;
   padding: 150px 100px 60px 0;
-  background-color: $prim;
+  background-color:#000;
   opacity: 0;
   transition: left 0.3s, opacity 0.3s;
   &::before {
@@ -249,7 +249,7 @@ body.fixed {
         padding: 0 20px;
         font-size: 30px;
         font-family: "Noto Serif KR", serif;
-        color: #aa9d90;
+        color:#fff;
         line-height: 30px;
       }
     }
@@ -301,19 +301,19 @@ body.fixed {
       padding: 4px 17px 5px;
       opacity: 0.22;
       border-radius: 7px;
-      border: solid 1px #fff;
+      border: solid 1px $w;
       text-align: center;
       color: $w;
       font-size: 13px;
       &:hover {
-        color: rgba($w, 0.4);
-        border: 1px solid rgba($w, 0.4);
+        color: rgba($w, 0.3);
+        border: 1px solid rgba($w, 0.3);
       }
     }
   }
   .foot-copyright {
     margin-top: auto;
-    color: #aa9d90;
+    color: $w;
     text-align: right;
     font-size: 14px;
     opacity: 0.35;
@@ -333,7 +333,7 @@ body.fixed {
     bottom: 60px;
     left: 100px;
     padding-left: 20px;
-    color: #efe2d3;
+    color: $w;
     &::before {
       content: "";
       position: absolute;
@@ -341,7 +341,7 @@ body.fixed {
       bottom: 0;
       left: 0;
       width: 1px;
-      background: #efe2d3;
+      background: $w;
     }
     em {
       display: block;
@@ -377,7 +377,7 @@ body.fixed {
     font-size: 10px;
     font-weight: 300;
     opacity: 0.4;
-    color: #fff;
+    color: $w;
   }
 }
 
@@ -576,7 +576,7 @@ body.fixed {
     align-items: flex-end;
     position: absolute;
     top: 50%;
-    left: 385px;
+    left: 100px;
     z-index: 100;
     transform: translateY(-70%);
     transform-origin: 0 50%;
@@ -595,7 +595,7 @@ body.fixed {
       }
       .txt {
         margin: 0 28px 0 0;
-        font-size: 25px;
+        font-size: 40px;
         font-weight: 500;
         b {
           font-size: 30px;
@@ -630,7 +630,7 @@ body.fixed {
       // min-width: 359px;
       margin: 0 0 8px 23px;
       color: $w;
-      font-size: 30px;
+      font-size: 40px;
       font-family: "Noto Serif KR", serif;
       font-weight: 200;
       white-space: nowrap;
@@ -690,11 +690,12 @@ body.fixed {
 
   .swiper-txt-sub {
     position: absolute;
+    width: 50%;
     top: 50%;
-    left: 385px;
+    left: 100px;
     transform: translateY(-20%);
     text-align: left;
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 500;
     font-family: "Noto Serif KR", serif;
     color: $w;
@@ -710,11 +711,12 @@ body.fixed {
   }
 }
 
-/*분양안내*/
+
+/*location*/
 .box_view05 {
   display: flex;
   // align-items: center;
-  background-color: $prim;
+  background-color: #000;
   line-height: 1.7;
   &::before {
     content: "";
@@ -722,7 +724,7 @@ body.fixed {
     float: left;
     width: 54%;
     height: 100%;
-    background: #d4d3d2 url(../images/pc-map-.png) 50% no-repeat;
+    background: #ffffff url(../images/q6.jpg) 50% no-repeat;
     background-size: contain;
   }
   .map-txt {
@@ -1072,7 +1074,7 @@ body.fixed {
   transform: scale(0);
   -webkit-transform-origin: left top;
   transform-origin: left top;
-  background-color: $prim;
+  background-color: #000;
 }
 
 .swiper-pagination {
@@ -1124,6 +1126,7 @@ body.fixed {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: invert(0.2);
 }
 
 .swiper-pagination-bullet {
@@ -1158,7 +1161,7 @@ body.fixed {
   width: 100%;
   height: 100vh;
   // padding: 16vh 33px 3vh 0;
-  background-color: $prim;
+  background-color: #000;
   transition: top 0.5s, opacity 0.5s;
   &::before {
     content: "";
