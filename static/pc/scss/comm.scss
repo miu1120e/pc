@@ -584,16 +584,17 @@ body.fixed {
     opacity: 0;
     transition: all 3s;
     a {
-      margin: 0 auto;
+      align-items: flex-end;
+      // margin: 0 auto;
       display: block;
       position: relative;
+      top: 70%;
       padding: 30px 60px;
       box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
       color: #999;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 4px;
-      font: 700 30px consolas;
       overflow: hidden;
     }
     
@@ -603,7 +604,7 @@ body.fixed {
       right: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(to right, #171618, #3bff3b);
+      background: linear-gradient(to right, #171618, #b1d6f9);
       animation: animate1 2s linear infinite;
     }
     
@@ -622,7 +623,7 @@ body.fixed {
       right: 0;
       height: 100%;
       width: 3px;
-      background: linear-gradient(to bottom, #171618, #3bff3b);
+      background: linear-gradient(to bottom, #171618, #b1d6f9);
       animation: animate2 2s linear infinite;
       animation-delay: 1s;
     }
@@ -641,7 +642,7 @@ body.fixed {
       right: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(to left, #171618, #3bff3b);
+      background: linear-gradient(to left, #171618, #b1d6f9);
       animation: animate3 2s linear infinite;
     }
     
@@ -660,7 +661,7 @@ body.fixed {
       left: 0;
       height: 100%;
       width: 3px;
-      background: linear-gradient(to top, #171618, #3bff3b);
+      background: linear-gradient(to top, #171618, #b1d6f9);
       animation: animate4 2s linear infinite;
       animation-delay: 1s;
     }
